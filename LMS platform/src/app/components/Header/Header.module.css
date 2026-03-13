@@ -1,0 +1,82 @@
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--araz-border);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 50;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.logoWrapper {
+  width: 120px;
+  height: 34px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  color: var(--araz-text-secondary);
+  background-color: transparent;
+}
+
+.navLink:hover {
+  background-color: rgba(118, 188, 33, 0.05);
+  color: var(--araz-text);
+}
+
+.navLinkActive {
+  color: var(--araz-primary);
+  background-color: rgba(118, 188, 33, 0.08);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background: var(--araz-primary);
+  box-shadow: 0 0 0 0 rgba(118, 188, 33, 0);
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.button:hover {
+  background: #68a91d;
+  box-shadow: 0 4px 12px rgba(118, 188, 33, 0.3);
+  transform: translateY(-2px);
+}
+
+.buttonIcon {
+  width: 1rem;
+  height: 1rem;
+}

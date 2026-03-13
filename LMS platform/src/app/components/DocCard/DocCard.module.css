@@ -1,0 +1,98 @@
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid var(--araz-border);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+}
+
+.cardHovered {
+  border-color: var(--araz-primary);
+  box-shadow: 0 12px 24px -8px rgba(118, 188, 33, 0.12);
+  transform: translateY(-2px);
+}
+
+.header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.iconWrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--araz-bg-subtle);
+  transition: all 0.3s;
+}
+
+.iconWrapperHovered {
+  background: var(--araz-primary-light);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--araz-primary);
+  stroke-width: 1.5;
+}
+
+.tag {
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tagNew {
+  background: var(--araz-primary-light);
+  color: var(--araz-primary);
+}
+
+.tagUpdated {
+  background: var(--araz-secondary-light);
+  color: var(--araz-secondary);
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0.375rem;
+  color: var(--araz-text);
+}
+
+.description {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--araz-text-secondary);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 12px;
+  color: var(--araz-text-secondary);
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.metaIcon {
+  width: 0.875rem;
+  height: 0.875rem;
+  stroke-width: 2;
+}

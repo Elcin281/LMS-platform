@@ -1,0 +1,160 @@
+.card {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  overflow: hidden;
+  border: 1px solid var(--araz-border);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.cardHovered {
+  border-color: var(--araz-primary);
+  box-shadow: 0 20px 40px -12px rgba(118, 188, 33, 0.15);
+  transform: translateY(-4px);
+}
+
+.topBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--araz-primary), var(--araz-secondary));
+  transition: transform 0.3s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.topBarVisible {
+  transform: scaleX(1);
+}
+
+.header {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.iconWrapper {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--araz-bg-subtle);
+  transition: all 0.3s;
+}
+
+.iconWrapperHovered {
+  background: var(--araz-primary-light);
+}
+
+.icon {
+  width: 1.375rem;
+  height: 1.375rem;
+  color: var(--araz-primary);
+  stroke-width: 1.5;
+}
+
+.headerContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--araz-text);
+}
+
+.description {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--araz-text-secondary);
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.buttonIcon {
+  width: 1rem;
+  height: 1rem;
+  stroke-width: 2;
+}
+
+.buttonPrimary {
+  background: var(--araz-primary);
+  color: white;
+}
+
+.buttonPrimary:hover {
+  background: #68a91d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(118, 188, 33, 0.3);
+}
+
+.buttonSecondary {
+  background: var(--araz-bg-subtle);
+  color: var(--araz-text);
+  border: 1px solid var(--araz-border);
+}
+
+.buttonSecondary:hover {
+  background: var(--araz-primary-light);
+  border-color: var(--araz-primary);
+  color: var(--araz-primary);
+}
+
+.buttonDark {
+  background: var(--araz-text);
+  color: white;
+}
+
+.buttonDark:hover {
+  background: #374151;
+  transform: translateY(-1px);
+}
+
+.buttonOrange {
+  background: var(--araz-secondary);
+  color: white;
+}
+
+.buttonOrange:hover {
+  background: #e67700;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 131, 0, 0.3);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

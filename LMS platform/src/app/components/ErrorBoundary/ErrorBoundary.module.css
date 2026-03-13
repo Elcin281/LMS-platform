@@ -1,0 +1,77 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.main {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.iconWrapper {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 131, 0, 0.1);
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--araz-secondary);
+}
+
+.status {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: var(--araz-text);
+}
+
+.textContent {
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--araz-text);
+}
+
+.message {
+  font-size: 1.125rem;
+  color: var(--araz-text-secondary);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  background: var(--araz-primary);
+  box-shadow: 0 0 0 0 rgba(118, 188, 33, 0);
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background: #68a91d;
+  box-shadow: 0 4px 12px rgba(118, 188, 33, 0.3);
+  transform: translateY(-2px);
+}

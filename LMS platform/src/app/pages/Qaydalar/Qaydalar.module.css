@@ -1,0 +1,23 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.main {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--araz-text);
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--araz-text-secondary);
+}
